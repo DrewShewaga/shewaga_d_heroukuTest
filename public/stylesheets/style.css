@@ -1,6 +1,6 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url(../images/bg.png);
+  background-image: url(../images/bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
   background-attachment: fixed;
@@ -91,15 +91,43 @@ nav ul li ul li:hover{
 	text-align: center;
 	margin-top: 22%;
 	margin-bottom: 28%;
-	opacity: .6;
 	color: #fff;
 }
 
 .content{
 	width: 95%;
-	height: 600px;
+	height: auto;
 	background-color: #fff;
 	margin: 0 auto;
 	border-radius: 10px;
-	margin-bottom: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: right;
 }
+
+.product{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.product img, .product h3{
+  width: 80%;
+}
+
+.product img:hover{
+  filter: grayscale(50);
+  cursor: pointer;
+}
+
+.product h3{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+
